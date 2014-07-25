@@ -9,7 +9,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -26,7 +26,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail1@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -43,7 +43,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail2@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -60,7 +60,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail3@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -77,7 +77,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail4@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -94,7 +94,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail5@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -111,7 +111,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail6@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -128,7 +128,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail7@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -145,7 +145,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail8@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -162,7 +162,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail9@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -179,7 +179,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail10@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -196,7 +196,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail11@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -213,7 +213,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail12@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -230,7 +230,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail13@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -247,7 +247,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail14@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -263,7 +263,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail15@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -280,7 +280,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail16@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -290,7 +290,7 @@ User.create(
 User.create(
     fname: 'Sebastian',
     lname: 'Armano',
-    blurb: "Is from Argentina where he studied electrical engineering at the University level. In his last year of school, he was invited to work on a research project for his thesis which turned into much more than a final thesis. A product was developed from the project which led the team of professors and students to co-found the first electronics spin-off company in Argentina. The company’s main product was a collision avoidance safety system for pit mine trucks. Today the company continues R&D in electronics and remains the only one of its kind in Argentina. Sebastian started at the company as a student, continued as a hardware designer and then progressed to project manager. Before starting the program at The Iron Yard he worked as an external consultant for the company. In the picture he’s standing in one of the open pit mines, where the product was tested. This mine is at more than 16,000 feet of altitude (and yes, next to him is just one tire of the truck!).",
+    blurb: "Is from Argentina where he studied electrical engineering at the University level. In his last year of school, he was invited to work on a research project for his thesis which turned into much more than a final thesis. A product was developed from the project which led the team of professors and students to co-found the first electronics spin-off company in Argentina. The company’s main product was a collision avoidance safety system for pit mine trucks. Today the company continues R&D in electronics and remains the only one of its kind in Argentina. Sebastian started at the company as a "student", continued as a hardware designer and then progressed to project manager. Before starting the program at The Iron Yard he worked as an external consultant for the company. In the picture he’s standing in one of the open pit mines, where the product was tested. This mine is at more than 16,000 feet of altitude (and yes, next to him is just one tire of the truck!).",
     github_url: 'site@github.com',
     twitter_url: 'site@twitter.com',
     linkedin_url: 'site@linkedin.com',
@@ -298,7 +298,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail17@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -315,7 +315,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail18@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -332,7 +332,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "student",
     email: 'fakeemail19@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -349,7 +349,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail20@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -366,7 +366,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail21@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -383,7 +383,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail22@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -400,7 +400,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail23@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -417,7 +417,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail24@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -434,7 +434,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail25@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'
@@ -451,7 +451,7 @@ User.create(
     webpage: 'site@site.com',
     cohort: 'x',
     extra: 'adsds',
-    is_admin: false,
+    role: "admin",
     email: 'fakeemail26@thefakestsite.com',
     password: 'password',
     password_confirmation: 'password'

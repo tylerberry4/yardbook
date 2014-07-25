@@ -11,5 +11,4 @@ RSpec.describe UsersController, :type => :controller do
       expect(data.first['fname']).to eq users.first.fname
     end
   end
-
 end
