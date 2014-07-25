@@ -10,7 +10,7 @@ FactoryGirl.define do
     webpage 'site@site.com'
     cohort 'x'
     extra 'adsds'
-    is_admin false
+    role 'student'
     sequence(:email) { |n| "emailfake#{n}@thefakestsite.com" }
     password 'password'
     password_confirmation 'password'
