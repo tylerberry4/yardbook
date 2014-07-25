@@ -3,6 +3,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    respond_with @users
+    render json: @users, each_serializer: UserSerializer
   end
 end
