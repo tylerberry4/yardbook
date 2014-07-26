@@ -7,7 +7,7 @@ describe AdminsController, :type => :controller do
       get :index, format: :json
       data = JSON.parse(response.body)
       expect(data).not_to be_empty
-      expect(data.first['fname']).to eq admins.first.fname
+      expect(data['admins'].first['fname']).to eq admins.first.fname
     end
   end
 end

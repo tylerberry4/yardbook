@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :student do
-    sequence(:fname) {|n| "User #{n}"}
+    sequence(:fname) {|n| "Student #{n}"}
     lname 'Jones'
     blurb 'Was great'
     github_url 'site@github.com'

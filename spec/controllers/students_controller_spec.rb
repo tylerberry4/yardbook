@@ -7,7 +7,7 @@ describe StudentsController, :type => :controller do
       get :index, format: :json
       data = JSON.parse(response.body)
       expect(data).not_to be_empty
-      expect(data.first['fname']).to eq students.first.fname
+      expect(data['students'].first['fname']).to eq students.first.fname
     end
   end
 end
