@@ -79,4 +79,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { host: 'http://mac-tips.herokuapp.com/'}
+
+  #need mandrill info
+  config.action_mailer.delivery_method = :mandrill
+  config.action_mailer.postmark_settings = {:api_key => ENV['MANDRILL_API_KEY']}
 end

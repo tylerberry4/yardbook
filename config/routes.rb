@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => {sessions: 'sessions'}
   resources :users, only: [:index]
-  resources :students, only: [:index, :show, :new, :create, :destroy, :update]
+  resources :students
   resources :admins, only: [:index, :show, :new, :create, :destroy, :update]
 end
