@@ -3,14 +3,8 @@ class SessionsController < Devise::SessionsController
   param_group :login_info, UsersController
   def create
     user = warden.authenticate!(:scope => :user, :recall => "#{controller_path}#failure")
-    sign_in_and_redirect(:user, user)
-  end
-
-  def sign_in_and_redirect(resource_or_scope, user=nil)
-    scope = Devise::Mapping.find_scope!(resource_or_scope)
-    user ||= resource_or_scope
-    sign_in(scope, user) unless warden.user(scope) == user
-    render :json => {:success => true}
+    sign_in(:user, user)
+    render :json => {:success => true, :current_user => current_user.id}
   end
 
   def failure
