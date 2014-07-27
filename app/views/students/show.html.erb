@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+  <strong>Fname:</strong>
+  <%= @student.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @student.lname %>
+</p>
+
+<% if @student.profile_pic?%>
+    <p>
+      <strong>Profile_pic:</strong>
+      <%= link_to "profile_pic", @student.profile_pic.url %>
+    </p>
+<% end %>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

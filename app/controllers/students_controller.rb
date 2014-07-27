@@ -13,8 +13,11 @@ class StudentsController < ApplicationController
   api :GET, "/students/:id", "Show a student"
   param_group :user, UsersController
   def show
-      respond_with @student
-    end
+      respond_to do |format|
+          format.html
+          format.json
+      end
+  end
 
   api :POST, "/students", "Create a student"
   param_group :user, UsersController
