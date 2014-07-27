@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
 
   self.inheritance_column = :role
 
+  validates :fname, :lname, :blurb, presence: :true
 end
