@@ -10,7 +10,6 @@ describe UsersController, :type => :controller do
       expect(data.first['fname']).to eq users.first.fname
     end
   end
-
 #
 #   it 'GET #show' do
 # #
@@ -42,6 +41,4 @@ describe UsersController, :type => :controller do
 #   it 'DELETE #destroy' do
 #   #
 #   end
-
 end
-

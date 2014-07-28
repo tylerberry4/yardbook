@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :user do
+  factory :admin do
     sequence(:fname) {|n| "User #{n}"}
     lname 'Jones'
     blurb 'Was great'

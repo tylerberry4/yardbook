@@ -6,6 +6,7 @@ ruby '2.1.2'
 gem 'rails', '4.1.4'
 gem 'pg'
 
+gem "active_model_serializers", "~> 0.8.0"
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'carrierwave'
@@ -14,8 +15,6 @@ gem 'devise'
 gem 'holder_rails'
 gem 'jquery-rails'
 gem 'mini_magick'
-gem 'oj'
-gem 'rabl'
 gem 'rspec-rails', '~> 3.0.1', group: [:development, :test]
 gem 'sass-rails', '~> 4.0.3'
 gem 'sdoc', '~> 0.4.0',          group: :doc
