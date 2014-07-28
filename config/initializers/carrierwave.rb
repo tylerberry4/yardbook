@@ -11,13 +11,13 @@ CarrierWave.configure do |config|
   # if Rails.env.production?
   #   config.storage = :fog
   # else
-  #   config.storage = :fog
+  #   config.storage = :file
   # end
 
   if Rails.env.test? || Rails.env.development?
     config.storage = :file
-    config.enable_processing = false
-    config.root = "#{Rails.root}/tmp/uploads/#{DateTime.now.to_f}.#{rand(999)}.#{rand(999)}"
+    #config.enable_processing = false
+    #config.root = "#{Rails.root}/tmp/uploads/#{DateTime.now.to_f}.#{rand(999)}.#{rand(999)}"
   else
     config.storage = :fog
   end
@@ -25,7 +25,7 @@ CarrierWave.configure do |config|
 
   config.cache_dir = "#{Rails.root}/tmp/uploads"                  # To let CarrierWave work on heroku
 
-  config.fog_directory = ENV['ironyardbook']
+  config.fog_directory = 'ironyardbook'
   config.fog_public     = false
   config.fog_attributes = {}
 end

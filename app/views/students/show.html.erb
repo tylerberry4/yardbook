@@ -13,9 +13,7 @@
     <p>
       <strong>Profile_pic:</strong>
       <%= link_to "profile_pic", @student.profile_pic.url %>
-      <%= image_tag profile_pic.profile_pic.url(:web, :preview) %>
-      <%= image_tag profile_pic.profile_pic.url(:print, :full) %>
-      <%= image_tag profile_pic.profile_pic.url(:web, :thumb) %>
+      <%= image_tag @student.profile_pic.url(:thumb) %>
     </p>
 <% end %>
 
