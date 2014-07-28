@@ -39,6 +39,6 @@ Rails.application.configure do
   # Devise setup
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   # Added to get email validation working
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {:address => "localhost", :port => "1025"}
+   config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {:address => "localhost", :port => "1025"}
 end
