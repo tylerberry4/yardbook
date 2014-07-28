@@ -14,7 +14,7 @@ CarrierWave.configure do |config|
     config.storage = :file
   end
 
-  config.fog_directory = 'ironyardbook'
+  config.fog_directory = 'theironyardbook'
 end
 
   # if Rails.env.production?
