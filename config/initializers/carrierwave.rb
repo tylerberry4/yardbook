@@ -25,7 +25,7 @@ CarrierWave.configure do |config|
 
   config.cache_dir = "#{Rails.root}/tmp/uploads"                  # To let CarrierWave work on heroku
 
-  config.fog_directory = ENV['iron_yardbook']
+  config.fog_directory = ENV['ironyardbook']
   config.fog_public     = false
   config.fog_attributes = {}
 end
