@@ -39,7 +39,7 @@ class StudentsController < ApplicationController
   param_group :user, UsersController
   def update
       @student.update(student_params)
-      render @student
+      render :json => @student
     end
 
   api :DELETE, "/students/:id", "Destroy a student"

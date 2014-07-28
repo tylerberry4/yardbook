@@ -8,12 +8,6 @@ CarrierWave.configure do |config|
       :aws_secret_access_key  => Rails.application.secrets.aws_secret_access_key
   }
 
-  if Rails.env.production?
-    config.storage = :fog
-  else
-    config.storage = :file
-  end
-
   config.fog_directory = 'theironyardbook'
 end
 

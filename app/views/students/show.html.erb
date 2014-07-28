@@ -13,7 +13,7 @@
     <p>
       <strong>Profile_pic:</strong>
       <%= link_to "profile_pic", @student.profile_pic.url %>
-      <%= image_tag @student.profile_pic.url(:thumb) %>
+      <%= image_tag @student.profile_pic.url(:thumb) if @student.profile_pic? %>
     </p>
 <% end %>
 
