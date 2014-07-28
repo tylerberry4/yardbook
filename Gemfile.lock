@@ -152,8 +152,8 @@ GEM
     rails-assets-backbone (1.1.2)
       rails-assets-underscore (>= 1.5.0)
     rails-assets-bitters (0.10.0)
-    rails-assets-bourbon (4.0.2)
-    rails-assets-neat (1.6.0)
+    rails-assets-bourbon (3.2.3)
+    rails-assets-neat (1.5.1)
       rails-assets-bourbon (>= 3.1)
     rails-assets-underscore (1.6.0)
     rails_12factor (0.0.2)
@@ -263,8 +263,8 @@ DEPENDENCIES
   rails (= 4.1.4)
   rails-assets-backbone
   rails-assets-bitters
-  rails-assets-bourbon
-  rails-assets-neat
+  rails-assets-bourbon (~> 3.2.0)
+  rails-assets-neat (~> 1.5.1)
   rails_12factor
   refills
   rspec-rails (~> 3.0.1)
