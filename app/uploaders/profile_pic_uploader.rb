@@ -22,3 +22,4 @@ class ProfilePicUploader < CarrierWave::Uploader::Base
            end
     "holder.js/#{size}/text:#{size}/social"
   end
+end
