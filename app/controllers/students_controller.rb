@@ -29,6 +29,9 @@ class StudentsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   api :POST, "/students", "Create a student"
   param_group :user, UsersController
   def create

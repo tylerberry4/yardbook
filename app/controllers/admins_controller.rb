@@ -70,4 +70,3 @@ class AdminsController < ApplicationController
                                     :webpage, :cohort, :extra, :role, :profile_pic)
   end
 end
-

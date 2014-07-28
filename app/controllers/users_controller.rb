@@ -4,7 +4,10 @@ class UsersController < ApplicationController
   api :GET, "/users", "List users"
   def index
     @users = User.all
-    render json: @users
+    respond to do |format|
+      format.html
+      format.json
+    end
   end
 
   def_param_group :full_name do
