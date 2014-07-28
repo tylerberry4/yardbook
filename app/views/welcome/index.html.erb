@@ -1,0 +1,41 @@
+  <body>
+    <header>
+      <div id="ribbon"></div>
+      <p id="the">The</p>
+      <p id="ironYard">IRON</p>
+      <p id="ironYard">YARD</p>
+
+    </header>
+
+    <nav>
+      <%= link_to "Login", new_user_session_path, class: "navButton" %>
+    </nav>
+
+    <div id="mainContainer">
+      <% @admins.each do |user| %>
+        <div class="hexContainer" style="background-image: http://www.freestockphotos.biz/pictures/4/4885/ghost.png">
+          <%= link_to(user) do %>
+          <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+          </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div id="mainContainer">
+      <% @students.each do |user| %>
+        <%= link_to user.profile_pic.url if user.profile_pic? %>
+        <div class="hexContainer" style="background-image: url(<%= user.profile_pic.url if user.profile_pic? %>)">
+          <%= link_to(user) do %>
+          <div class="hexagon">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+          </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+  </body>

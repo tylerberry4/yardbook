@@ -1,0 +1,68 @@
+<%= form_for(@admin) do |f| %>
+    <% if @admin.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@admin.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+          <ul>
+            <% @admin.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+<div class="fname" id="fname">
+  <%= f.label :fname %><br />
+  <%= f.text_field :fname %>
+</div>
+
+<div class="lname">
+  <%= f.label :lname %><br />
+  <%= f.text_field :lname %>
+</div>
+
+<div class="email">
+  <%= f.label :email %><br />
+  <%= f.text_field :email %>
+</div>
+
+<div class="blurb">
+  <%= f.label :blurb %><br />
+  <%= f.text_field :blurb %>
+</div>
+<div class="github_url">
+  <%= f.label :github_url %><br />
+  <%= f.text_field :github_url %>
+</div>
+
+<div class="twitter_url">
+  <%= f.label :twitter_url %><br />
+  <%= f.text_field :twitter_url %>
+</div>
+
+<div class="linkedin_url">
+  <%= f.label :linkedin_url %><br />
+  <%= f.text_field :linkedin_url %>
+</div>
+<div class="webpage">
+  <%= f.label :webpage %><br />
+  <%= f.text_field :webpage %>
+</div>
+
+<div class="title">
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+</div>
+
+<div class="field">
+  <%= f.label :profile_pic %><br>
+  <%= f.file_field :profile_pic %>
+</div>
+
+<div>
+  <%= f.label :remove_profile_pic %><br>
+  <%= f.check_box :remove_profile_pic %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>

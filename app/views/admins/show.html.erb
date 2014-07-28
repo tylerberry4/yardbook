@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+<div class="fname">
+  Fname:
+  <%= @admin.fname %><br />
+</div>
+
+<div class="lname">
+  Lname:
+  <%= @admin.lname %><br />
+</div>
+
+<div class="email">
+  Lname:
+  <%= @admin.email %><br />
+</div>
+
+<div class="blurb">
+  Lname:
+  <%= @admin.blurb %><br />
+
+</div>
+<div class="github_url">
+  Lname:
+  <%= @admin.github_url %><br />
+</div>
+
+<div class="twitter_url">
+  Lname:
+  <%= @admin.twitter_url %><br />
+</div>
+
+<div class="linkedin_url">
+  Lname:
+  <%= @admin.linkedin_url %><br />
+</div>
+<div class="webpage">
+  Lname:
+  <%= @admin.webpage %><br />
+</div>
+
+<div class="title">
+  Lname:
+  <%= @admin.title %><br />
+</div>
+
+<% if @admin.profile_pic?%>
+    <div class="profile_pic"
+         Profile_pic:
+    <%= link_to "profile_pic", @admin.profile_pic.url %>
+    <%= image_tag @admin.profile_pic.url(:thumb) if @admin.profile_pic? %>
+    </div
+<% end %>
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>

@@ -1,19 +1,30 @@
 class AdminsController < ApplicationController
-  respond_to :json
-
   before_action :find_admin, only: [:show, :update, :destroy]
 
   api :GET, "/admins", "List admins"
   param_group :user, UsersController
   def index
     @admins = Admin.all
-    render json: @admins
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :GET, "/admins/:id", "Show an admin"
   param_group :user, UsersController
+  def edit
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   def show
-    respond_with @admin
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :POST, "/admins", "Create an admin"
@@ -21,7 +32,10 @@ class AdminsController < ApplicationController
   def create
     @admin = Admin.new(admin_params)
     @admin.save
-    respond_with @admin
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :PATCH, "/admins/:id", "Update an admin"
@@ -29,14 +43,20 @@ class AdminsController < ApplicationController
   param_group :user, UsersController
   def update
     @admin.update(admin_params)
-    respond_with @admin
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :DELETE, "/admins/:id", "Destroy an admin"
   param_group :user, UsersController
   def destroy
     @admin.destroy
-    respond_with @admin
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   private
@@ -50,4 +70,3 @@ class AdminsController < ApplicationController
                                     :webpage, :cohort, :extra, :role, :profile_pic)
   end
 end
-

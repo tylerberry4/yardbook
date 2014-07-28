@@ -2,27 +2,27 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-"use strict"
+// "use strict"
 
-// Model
-var Person = Backbone.Model.extend({
-});
+// // Model
+// var Person = Backbone.Model.extend({
+// });
 
-// Collection
-var PeopleCollection = Backbone.Collection.extend({
+// // Collection
+// var PeopleCollection = Backbone.Collection.extend({
  
-  model: Person,
+//   model: Person,
  
-  initialize: function (options) {
-    this.url = "http://yardbook.herokuapp.com/users.json"
-  },
+//   initialize: function (options) {
+//     this.url = "http://yardbook.herokuapp.com/users.json"
+//   },
  
-  parse: function(response) {
-    return response.results;
-  }
+//   parse: function(response) {
+//     return response.results;
+//   }
  
-});
+// });
 
-// create an instance of PeopleCollection
-var people = new PeopleCollection();
-people.fetch();
+// // create an instance of PeopleCollection
+// var people = new PeopleCollection();
+// people.fetch();
