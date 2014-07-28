@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  respond_to :json
+  respond_to :json, except: :show
 
   before_action :find_admin, only: [:show, :update, :destroy]
 
@@ -13,7 +13,10 @@ class AdminsController < ApplicationController
   api :GET, "/admins/:id", "Show an admin"
   param_group :user, UsersController
   def show
-    respond_with @admin
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :POST, "/admins", "Create an admin"
@@ -50,4 +53,3 @@ class AdminsController < ApplicationController
                                     :webpage, :cohort, :extra, :role, :profile_pic)
   end
 end
-

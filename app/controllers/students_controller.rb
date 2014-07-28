@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
   respond_to :json
 
-  before_action :find_student, only: [:show, :update, :destroy]
+  before_action :find_student, only: [:show, :edit, :update, :destroy]
 
   api :GET, "/students", "List students"
   param_group :user, UsersController
@@ -14,7 +14,10 @@ class StudentsController < ApplicationController
   param_group :user, UsersController
   def show
       respond_with @student
-    end
+  end
+
+  def edit
+  end
 
   api :POST, "/students", "Create a student"
   param_group :user, UsersController

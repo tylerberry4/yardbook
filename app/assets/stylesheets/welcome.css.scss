@@ -14,7 +14,7 @@ body {
 //   background-color: blue;
 //   transform: rotate(45deg);
 //   position: relative;
-//   top: 
+//   top:
 // }
 
 #the {
@@ -79,20 +79,20 @@ nav {
   &:nth-child(7n+5) {
     margin-left: 147px;
   }
-  
+
   //Remove the right margin to the 4th hex
   &:nth-child(7n+4) {
     margin-right: 0;
   }
- 
+
 }
 
 .hexagon {
   position: relative;
-  width: 250px; 
+  width: 250px;
   height: 144.34px;
   margin: 72.17px 0;
-  background-image: url(https://avatars2.githubusercontent.com/u/6550704?s=460);
+  // background-image: url(https://avatars2.githubusercontent.com/u/6550704?s=460);
   background-size: auto 254.0341px;
   background-position: center;
   border-left: solid 15px #ff4d41;
