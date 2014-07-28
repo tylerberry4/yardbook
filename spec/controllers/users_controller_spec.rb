@@ -5,9 +5,10 @@ describe UsersController, :type => :controller do
     it "shows all users" do
       users = create_list(:user, 2)
       get :index, format: :json
+      expect(response).to be_success
       data = JSON.parse(response.body)
       expect(data).not_to be_empty
-      expect(data.first['fname']).to eq users.first.fname
+      expect(data['users'].first['fname']).to eq users.first.fname
     end
   end
 #

@@ -37,6 +37,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+  gem 'simplecov', require: false
 end
 
 group :production do
@@ -45,3 +46,5 @@ group :production do
   gem 'rails_12factor'
   gem 'unicorn', '~> 4.8.3'
 end
+
+gem 'apipie-rails'

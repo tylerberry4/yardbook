@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :admin do
-    sequence(:fname) {|n| "User #{n}"}
+    sequence(:fname) {|n| "Admin #{n}"}
     lname 'Jones'
     blurb 'Was great'
     github_url 'site@github.com'
