@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  respond_to :json, except: :show
+  respond_to :html, except: :show
 
   before_action :find_student, only: [:show, :edit, :update, :destroy]
 
@@ -7,7 +7,10 @@ class StudentsController < ApplicationController
   param_group :user, UsersController
   def index
     @students = Student.all
-    render json: @students, serializer: :student_serializer
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   api :GET, "/students/:id", "Show a student"
@@ -31,7 +34,10 @@ class StudentsController < ApplicationController
   def create
       @student = Student.new(student_params)
       @student.save
-      render :json => @student
+      respond_to do |format|
+        format.html
+        format.json
+      end
     end
 
   api :PATCH, "/students/:id", "Update a student"
@@ -39,14 +45,20 @@ class StudentsController < ApplicationController
   param_group :user, UsersController
   def update
       @student.update(student_params)
-      render :json => @student
+      respond_to do |format|
+        format.html
+        format.json
+      end
     end
 
   api :DELETE, "/students/:id", "Destroy a student"
   param_group :user, UsersController
   def destroy
       @student.destroy
-      respond_with @student
+      respond_to do |format|
+        format.html
+        format.json
+      end
     end
 
   private

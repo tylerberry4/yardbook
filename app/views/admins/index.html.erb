@@ -1,4 +1,4 @@
-<h1>Listing students</h1>
+<h1>Listing admins</h1>
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
   </thead>
 
   <tbody>
-  <% @students each do |f| %>
+  <% @admins each do |f| %>
       <tr>
         <td><%= f.fname %></td>
         <td><%= f.lname %></td>
@@ -31,11 +31,11 @@
         <td><%= f.title %></td>
         <td><% if f.profile_pic? %>
               <%= link_to "profile_pic", f.profile_pic.url %>
-              <%= image_tag @student.profile_pic.url(:thumb) %>
+              <%= image_tag @admins.profile_pic.url(:thumb) %>
           <% end %> </td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admins %></td>
+        <td><%= link_to 'Edit', edit_admins_path(admins) %></td>
+        <td><%= link_to 'Destroy', admins, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
   <% end %>
   </tbody>

@@ -1,20 +1,54 @@
 <p id="notice"><%= notice %></p>
+<div class="fname">
+     Fname:
+  <%= @student.fname %><br />
+</div>
 
-  <strong>Fname:</strong>
-  <%= @student.fname %>
-</p>
+<div class="lname">
+  Lname:
+  <%= @student.lname %><br />
+</div>
 
-<p>
-  <strong>Lname:</strong>
-  <%= @student.lname %>
-</p>
+<div class="email">
+  Lname:
+  <%= @student.email %><br />
+</div>
+
+<div class="blurb">
+  Lname:
+  <%= @student.blurb %><br />
+
+</div>
+<div class="github_url">
+  Lname:
+  <%= @student.github_url %><br />
+</div>
+
+<div class="twitter_url">
+  Lname:
+  <%= @student.twitter_url %><br />
+</div>
+
+<div class="linkedin_url">
+  Lname:
+  <%= @student.linkedin_url %><br />
+</div>
+<div class="webpage">
+  Lname:
+  <%= @student.webpage %><br />
+</div>
+
+<div class="title">
+  Lname:
+  <%= @student.title %><br />
+</div>
 
 <% if @student.profile_pic?%>
-    <p>
-      <strong>Profile_pic:</strong>
+    <div class="profile_pic"
+      Profile_pic:
       <%= link_to "profile_pic", @student.profile_pic.url %>
       <%= image_tag @student.profile_pic.url(:thumb) if @student.profile_pic? %>
-    </p>
+    </div
 <% end %>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
