@@ -22,8 +22,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'rails-assets-backbone'
 gem 'rails-assets-bitters'
-gem 'rails-assets-bourbon'
-gem 'rails-assets-neat'
+gem 'rails-assets-bourbon', '~> 3.2.0'
+gem 'rails-assets-neat', '~> 1.5.1'
 gem 'refills'
 
 group :development do
