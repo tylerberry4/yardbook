@@ -18,20 +18,20 @@
   </thead>
 
   <tbody>
-  <% @students each do |f| %>
+  <% @students.each do |student| %>
       <tr>
-        <td><%= f.fname %></td>
-        <td><%= f.lname %></td>
-        <td><%= f.email %></td>
-        <td><%= f.blurb %></td>
-        <td><%= f.github_url %></td>
-        <td><%= f.twitter_url %></td>
-        <td><%= f.linkedin_url %></td>
-        <td><%= f.webpage %></td>
-        <td><%= f.title %></td>
-        <td><% if f.profile_pic? %>
-              <%= link_to "profile_pic", f.profile_pic.url %>
-              <%= image_tag @student.profile_pic.url(:thumb) %>
+        <td><%= student.fname %></td>
+        <td><%= student.lname %></td>
+        <td><%= student.email %></td>
+        <td><%= student.blurb %></td>
+        <td><%= student.github_url %></td>
+        <td><%= student.twitter_url %></td>
+        <td><%= student.linkedin_url %></td>
+        <td><%= student.webpage %></td>
+        <td><%= student.title %></td>
+        <td><% if student.profile_pic? %>
+              <%= link_to "profile_pic", student.profile_pic.url %>
+              <%= image_tag student.profile_pic.url(:thumb) %>
           <% end %> </td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>

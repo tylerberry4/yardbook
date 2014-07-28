@@ -1,18 +1,10 @@
 class AdminsController < ApplicationController
   before_action :find_admin, only: [:show, :update, :destroy]
 
-  api :GET, "/admins", "List admins"
-  param_group :user, UsersController
   def index
     @admins = Admin.all
-    respond_to do |format|
-      format.html
-      format.json
-    end
   end
 
-  api :GET, "/admins/:id", "Show an admin"
-  param_group :user, UsersController
   def edit
     respond_to do |format|
       format.html
@@ -27,8 +19,6 @@ class AdminsController < ApplicationController
     end
   end
 
-  api :POST, "/admins", "Create an admin"
-  param_group :user, UsersController
   def create
     @admin = Admin.new(admin_params)
     @admin.save
@@ -38,9 +28,6 @@ class AdminsController < ApplicationController
     end
   end
 
-  api :PATCH, "/admins/:id", "Update an admin"
-  api :PUT, "/admins/:id", "Update an admin"
-  param_group :user, UsersController
   def update
     @admin.update(admin_params)
     respond_to do |format|
@@ -49,8 +36,6 @@ class AdminsController < ApplicationController
     end
   end
 
-  api :DELETE, "/admins/:id", "Destroy an admin"
-  param_group :user, UsersController
   def destroy
     @admin.destroy
     respond_to do |format|
