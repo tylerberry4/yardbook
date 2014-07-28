@@ -4,41 +4,43 @@
 
 @import url(http://fonts.googleapis.com/css?family=Italianno|Ultra);
 
-body {
-  margin: none;
-}
+html, body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+ background-color: #bdc3c7;
+ }
 
-// #ribbon {
-//   height: 30px;
-//   width: 300px;
-//   background-color: blue;
-//   transform: rotate(45deg);
-//   position: relative;
-//   top: 
-// }
+
 
 #the {
   font-family: 'Italianno', cursive;
   font-size: 2.5em;
 }
 
-#ironYard {
+#ironBook {
   font-family: 'Ultra', serif;
   font-size: 4em;
 }
 
 header {
   margin-top: none;
-  height: 400px;
-  // background-image: url("http://qph.cf.quoracdn.net/main-qimg-fcb98c13e50b5880858ad06928c24ebe");
-  // background-size:100% 100%;
-  // background-repeat:no-repeat;
+  height: 400px; 
+  // background: url(http://i.imgur.com/KHiwzCS.jpg?2) no-repeat;
+  // background-size: 100%;
+
+
   background-color: #e74c3c;
   p{
-    margin: 0;
+    margin: -20px 0;
     text-align: center;
     position: relative;
-    top: 60px;
+    top: 80px;
+  }
+  img {
+    width: 200px;
+    float: right;
+    margin-left: -190px;
   }
 }
 
@@ -74,7 +76,7 @@ nav {
 
 .hexContainer {
   float: left;
-  margin: -10px 10px;
+  margin: -20px 10px;
   //Add left margin to the 5th hex
   &:nth-child(7n+5) {
     margin-left: 147px;
