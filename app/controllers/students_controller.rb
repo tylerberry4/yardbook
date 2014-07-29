@@ -8,18 +8,13 @@ class StudentsController < ApplicationController
   def show
     respond_to do |format|
         format.html
-        format.json
     end
   end
 
   def edit
     respond_to do |format|
       format.html
-      format.json
     end
-  end
-
-  def edit
   end
 
   def create
@@ -27,7 +22,6 @@ class StudentsController < ApplicationController
       @student.save
       respond_to do |format|
         format.html
-        format.json
       end
   end
 
@@ -40,7 +34,6 @@ class StudentsController < ApplicationController
       @student.destroy
       respond_to do |format|
         format.html
-        format.json
       end
   end
 

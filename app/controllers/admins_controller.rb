@@ -8,14 +8,12 @@ class AdminsController < ApplicationController
   def edit
     respond_to do |format|
       format.html
-      format.json
     end
   end
 
   def show
     respond_to do |format|
       format.html
-      format.json
     end
   end
 
@@ -24,7 +22,6 @@ class AdminsController < ApplicationController
     @admin.save
     respond_to do |format|
       format.html
-      format.json
     end
   end
 
@@ -32,7 +29,6 @@ class AdminsController < ApplicationController
     @admin.update(admin_params)
     respond_to do |format|
       format.html
-      format.json
     end
   end
 
@@ -40,7 +36,6 @@ class AdminsController < ApplicationController
     @admin.destroy
     respond_to do |format|
       format.html
-      format.json
     end
   end
 
