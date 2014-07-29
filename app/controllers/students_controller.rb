@@ -18,23 +18,23 @@ class StudentsController < ApplicationController
   end
 
   def create
-      @student = Student.new(student_params)
-      @student.save
-      respond_to do |format|
-        format.html
-      end
+    @student = Student.new(student_params)
+    @student.save
+    respond_to do |format|
+      format.html
+    end
   end
 
   def update
-      @student.update(student_params)
-      redirect_to @student
+    @student.update(student_params)
+    redirect_to @student
   end
 
   def destroy
-      @student.destroy
-      respond_to do |format|
-        format.html
-      end
+    @student.destroy
+    respond_to do |format|
+      format.html
+    end
   end
 
   private

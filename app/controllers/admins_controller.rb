@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  before_action :find_admin, only: [:show, :update, :destroy]
+  before_action :find_admin, only: [:show, :edit, :update, :destroy]
 
   def index
     @admins = Admin.all
@@ -27,9 +27,7 @@ class AdminsController < ApplicationController
 
   def update
     @admin.update(admin_params)
-    respond_to do |format|
-      format.html
-    end
+    redirect_to @admin
   end
 
   def destroy

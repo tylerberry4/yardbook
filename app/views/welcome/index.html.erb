@@ -13,7 +13,11 @@
 
     <div id="mainContainer">
       <% @admins.each do |user| %>
-        <div class="hexContainer" style="background-image: http://www.freestockphotos.biz/pictures/4/4885/ghost.png">
+        <% if user.profile_pic? %>
+        <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
+        <% else %>
+        <div class="hexContainer">
+        <% end %>
           <%= link_to(user) do %>
           <div class="hexagon">
             <div class="hexTop"></div>
@@ -26,8 +30,11 @@
 
     <div id="mainContainer">
       <% @students.each do |user| %>
-        <%= link_to user.profile_pic.url if user.profile_pic? %>
-        <div class="hexContainer" style="background-image: url(<%= user.profile_pic.url if user.profile_pic? %>)">
+        <% if user.profile_pic? %>
+        <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
+        <% else %>
+        <div class="hexContainer">
+        <% end %>
           <%= link_to(user) do %>
           <div class="hexagon">
             <div class="hexTop"></div>
