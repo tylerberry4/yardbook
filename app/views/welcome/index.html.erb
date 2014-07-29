@@ -15,12 +15,12 @@
     <div id="mainContainer">
       <% @admins.each do |user| %>
         <% if user.profile_pic? %>
-        <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
+        <div class="hexContainer"  >
         <% else %>
         <div class="hexContainer">
         <% end %>
           <%= link_to(user) do %>
-          <div class="hexagon">
+          <div class="hexagon" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
           </div>

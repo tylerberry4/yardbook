@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<p>hi</p>
+
 <% if @student.profile_pic?%>
     <div class="profile_pic"
-      Profile_pic:
+      
       <%= link_to "profile_pic", @student.profile_pic.url %>
       <%= image_tag @student.profile_pic.url(:thumb) if @student.profile_pic? %>
     </div
