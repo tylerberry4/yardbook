@@ -7,13 +7,18 @@
 
     </header>
 
+
     <nav>
+      <% if current_user.nil? %>
       <%= link_to "Login", new_user_session_path, class: "navButton" %>
+      <% else %>
+      <%= link_to "Logout", destroy_user_session_path, class: "navButton" %>
+      <% end %>
     </nav>
 
 
     <div id="mainContainer">
-      <% @admins.each do |user| %>
+      <% @students.each do |user| %>
         <% if user.profile_pic? %>
         <div class="hexContainer"  >
         <% else %>
@@ -30,7 +35,7 @@
     </div>
 
     <div id="mainContainer">
-      <% @students.each do |user| %>
+      <% @admins.each do |user| %>
         <% if user.profile_pic? %>
         <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
         <% else %>
