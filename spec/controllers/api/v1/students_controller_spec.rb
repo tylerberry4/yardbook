@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe StudentsController, :type => :controller do
+describe API::V1::StudentsController, :type => :controller do
   describe "GET index" do
     it "shows all students" do
       students = create_list(:student, 2)

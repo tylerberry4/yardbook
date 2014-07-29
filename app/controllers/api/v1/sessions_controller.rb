@@ -1,6 +1,5 @@
 class SessionsController < Devise::SessionsController
-  api :POST, "/users/sign_in", "Create a session"
-  param_group :login_info, UsersController
+
   def create
     user = warden.authenticate!(:scope => :user, :recall => "#{controller_path}#failure")
     sign_in(:user, user)
