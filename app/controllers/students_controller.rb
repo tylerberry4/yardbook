@@ -29,9 +29,6 @@ class StudentsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
   api :POST, "/students", "Create a student"
   param_group :user, UsersController
   def create
@@ -47,12 +44,16 @@ class StudentsController < ApplicationController
   api :PUT, "/students/:id", "Update a student"
   param_group :user, UsersController
   def update
-      @student.update(student_params)
-      respond_to do |format|
-        format.html
-        format.json
+    respond_to do |format|
+      if @student.update(student_params)
+        format.html { redirect_to @student, notice: 'Student was successfully updated.' }
+        format.json { render :show, status: :ok, location: @student }
+      else
+        format.html { render :edit }
+        format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
+  end
 
   api :DELETE, "/students/:id", "Destroy a student"
   param_group :user, UsersController
