@@ -1,47 +1,4 @@
 <p id="notice"><%= notice %></p>
-<div class="fname">
-     Fname:
-  <%= @student.fname %><br />
-</div>
-
-<div class="lname">
-  Lname:
-  <%= @student.lname %><br />
-</div>
-
-<div class="email">
-  Lname:
-  <%= @student.email %><br />
-</div>
-
-<div class="blurb">
-  Lname:
-  <%= @student.blurb %><br />
-
-</div>
-<div class="github_url">
-  Lname:
-  <%= @student.github_url %><br />
-</div>
-
-<div class="twitter_url">
-  Lname:
-  <%= @student.twitter_url %><br />
-</div>
-
-<div class="linkedin_url">
-  Lname:
-  <%= @student.linkedin_url %><br />
-</div>
-<div class="webpage">
-  Lname:
-  <%= @student.webpage %><br />
-</div>
-
-<div class="title">
-  Lname:
-  <%= @student.title %><br />
-</div>
 
 <% if @student.profile_pic?%>
     <div class="profile_pic"
@@ -50,6 +7,48 @@
       <%= image_tag @student.profile_pic.url(:thumb) if @student.profile_pic? %>
     </div
 <% end %>
+
+<div class="profile_pic">
+  <img src="">
+</div>  
+
+<div class="fullName">
+  <%= @student.fname %> <%= @student.lname %>
+</div>
+
+<div class="blurb">
+  <%= @student.blurb %><br />
+</div>
+
+
+<div class="github_url">
+  <i class="fa fa-github-square"></i>
+  <%= @student.github_url %><br />
+</div>
+
+<div class="twitter_url">
+  <i class="fa fa-twitter-square"></i>
+  <%= @student.twitter_url %><br />
+</div>
+
+<div class="linkedin_url">
+  <i class="fa fa-linkedin-square"></i>
+  <%= @student.linkedin_url %><br />
+</div>
+
+<div class="webpage">
+  <%= @student.webpage %><br />
+</div>
+
+<div class="email">
+  <%= @student.email %><br />
+</div>
+
+<!-- <div class="title">
+  <%= @student.title %><br />
+</div> -->
+
+
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>

@@ -25,6 +25,7 @@ gem 'rails-assets-bitters'
 gem 'rails-assets-bourbon', '~> 3.2.0'
 gem 'rails-assets-neat', '~> 1.5.1'
 gem 'refills'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'annotate'

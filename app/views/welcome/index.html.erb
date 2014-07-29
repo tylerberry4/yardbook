@@ -1,15 +1,16 @@
   <body>
     <header>
-      <div id="ribbon"></div>
+      <img src="http://i.imgur.com/hV6KtlN.png?1">
       <p id="the">The</p>
-      <p id="ironYard">IRON</p>
-      <p id="ironYard">YARD</p>
+      <p id="yardBook">YARD</p>
+      <p id="yardBook">BOOK</p>
 
     </header>
 
     <nav>
       <%= link_to "Login", new_user_session_path, class: "navButton" %>
     </nav>
+
 
     <div id="mainContainer">
       <% @admins.each do |user| %>
@@ -37,5 +38,7 @@
         </div>
       <% end %>
     </div>
+
+    <%= javascript_include_tag  "games/messages.js" %>
 
   </body>

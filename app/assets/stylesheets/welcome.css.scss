@@ -8,7 +8,7 @@ html, body {
  margin: 0px;
  padding: 0px;
  border: 0px;
- background-color: #bdc3c7;
+ background-color: #34495e;
  }
 
 
@@ -24,52 +24,56 @@ html, body {
 
 #the {
   font-family: 'Italianno', cursive;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
-#ironBook {
+#yardBook {
   font-family: 'Ultra', serif;
-  font-size: 4em;
+  font-size: 5em;
 }
 
 header {
   margin-top: none;
-  height: 400px; 
+  height: 500px; 
   // background: url(http://i.imgur.com/KHiwzCS.jpg?2) no-repeat;
   // background-size: 100%;
 
 
-  background-color: #e74c3c;
+  background-color: #FF9969;
   p{
-    margin: -20px 0;
+    margin: -30px 0;
     text-align: center;
     position: relative;
-    top: 80px;
+    top: 125px;
+    color: #34495e;
   }
   img {
-    width: 200px;
+    width: 250px;
     float: right;
-    margin-left: -190px;
+    margin-left: -250px;
   }
 }
 
 nav {
   height: 60px;
-  background-color: black;
+  background-color: #7f8c8d;
   text-align: center;
-  margin-bottom: 50px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  margin-bottom: 150px;
   a {
-    background-color: #ff4d41;
-    padding: 16px 30px 17px 30px;
+    background-color: #5F8DD3;
+    padding: 30px;
     font-family: sans-serif;
     color: white;
     position: relative;
     top: 17px;
     font-size: 1.4em;
     text-decoration: none;
+    border: solid black 2px;
     &:hover {
-      opacity: .9;
       color: black;
+      border-color: white;
     }
     @media screen and (max-width: 600px) {
     padding: 0 10px 0 10px;
@@ -106,8 +110,8 @@ nav {
   // background-image: url(https://avatars2.githubusercontent.com/u/6550704?s=460);
   background-size: auto 254.0341px;
   background-position: center;
-  border-left: solid 15px #ff4d41;
-  border-right: solid 15px #ff4d41;
+  border-left: solid 15px #FF9969;
+  border-right: solid 15px #FF9969;
 }
 
 .hexTop,
@@ -142,8 +146,8 @@ nav {
 
 .hexTop {
   top: -88.3883px;
-  border-top: solid 21.2132px #ff4d41;
-  border-right: solid 21.2132px #ff4d41;
+  border-top: solid 21.2132px #FF9969;
+  border-right: solid 21.2132px #FF9969;
 }
 
 .hexTop:after {
@@ -152,8 +156,8 @@ nav {
 
 .hexBottom {
   bottom: -88.3883px;
-  border-bottom: solid 21.2132px #ff4d41;
-  border-left: solid 21.2132px #ff4d41;
+  border-bottom: solid 21.2132px #FF9969;
+  border-left: solid 21.2132px #FF9969;
 }
 
 .hexBottom:after {
