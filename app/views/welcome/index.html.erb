@@ -18,7 +18,7 @@
 
 
     <div id="mainContainer">
-      <% @students.each do |user| %>
+      <% @users.each do |user| %>
         <% if user.profile_pic? %>
         <div class="hexContainer"  >
         <% else %>
@@ -34,23 +34,7 @@
       <% end %>
     </div>
 
-    <div id="mainContainer">
-      <% @admins.each do |user| %>
-        <% if user.profile_pic? %>
-        <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
-        <% else %>
-        <div class="hexContainer">
-        <% end %>
-          <%= link_to(user) do %>
-          <div class="hexagon">
-            <div class="hexTop"></div>
-            <div class="hexBottom"></div>
-          </div>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
 
-    <%= javascript_include_tag  "games/messages.js" %>
+
 
   </body>
