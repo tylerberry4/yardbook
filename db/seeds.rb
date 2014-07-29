@@ -10,6 +10,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'maebeale@gmail.com',
+    profile_pic: 'maebeale.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -26,6 +27,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail1@thefakestsite.com',
+    profile_pic: 'dazm12.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -42,6 +44,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail2@thefakestsite.com',
+    profile_pic: 'tylerberry4.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -58,6 +61,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail3@thefakestsite.com',
+    profile_pic: 'amygori.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -74,6 +78,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail4@thefakestsite.com',
+    profile_pic: 'bullcitydave.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -90,6 +95,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail5@thefakestsite.com',
+    profile_pic: 'emmylucille.jpg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -106,6 +112,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail6@thefakestsite.com',
+    profile_pic: 'klovelacek.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -122,6 +129,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail7@thefakestsite.com',
+    profile_pic: 'maswhitaker.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -137,6 +145,7 @@ Student.create(
     webpage: 'Front End',
     title: '',
     email: 'fakeemail8@thefakestsite.com',
+    profile_pic: 'obeid.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -153,6 +162,7 @@ Student.create(
     track: 'Front End',
     title: '',
     email: 'fakeemail9@thefakestsite.com',
+    profile_pic: 'jparker85.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -169,6 +179,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail10@thefakestsite.com',
+    profile_pic: 'ahooge.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -185,6 +196,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail11@thefakestsite.com',
+    profile_pic: 'ichus.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -201,6 +213,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail12@thefakestsite.com',
+    profile_pic: 'rscottbradshaw.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -217,6 +230,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail13@thefakestsite.com',
+    profile_pic: 'chetcorey.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -233,6 +247,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail14@thefakestsite.com',
+    profile_pic: 'jcward10.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -249,6 +264,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail15@thefakestsite.com',
+    profile_pic: 'briardes.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -265,6 +281,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail16@thefakestsite.com',
+    profile_pic: 'jjlangholtz.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -282,6 +299,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail17@thefakestsite.com',
+    profile_pic: 'sebarmano.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -298,6 +316,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail18@thefakestsite.com',
+    profile_pic: 'michaelbyrd.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -314,6 +333,7 @@ Student.create(
     track: 'Ruby on Rails',
     title: '',
     email: 'fakeemail19@thefakestsite.com',
+    profile_pic: 'ernbrn.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -330,6 +350,7 @@ Admin.create(
     track: 'Ruby on Rails',
     title: 'TA',
     email: 'fakeemail20@thefakestsite.com',
+    profile_pic: 'therufs.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -346,6 +367,7 @@ Admin.create(
     track: 'Ruby on Rails',
     title: 'Instructor',
     email: 'fakeemail21@thefakestsite.com',
+    profile_pic: 'cndreisbach.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -361,7 +383,8 @@ Admin.create(
     webpage: 'site@site.com',
     track: '',
     title: 'Operations Assistant',
-    email: 'fakeemail22@thefakestsite.com',
+    email: 'jordan.hammond@theironyard.com',
+    profile_pic: 'jordan.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -377,7 +400,8 @@ Admin.create(
     webpage: 'site@site.com',
     track: '',
     title: 'Campus Director',
-    email: 'fakeemail24@thefakestsite.com',
+    email: 'jessica@theironyard.com',
+    profile_pic: 'jessica.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -394,6 +418,7 @@ Admin.create(
     track: 'Front End',
     title: 'Instructor',
     email: 'fakeemail25@thefakestsite.com',
+    profile_pic: 'juliaelman.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
@@ -410,6 +435,7 @@ Admin.create(
     track: 'Front End',
     title: 'TA',
     email: 'fakeemail26@thefakestsite.com',
+    profile_pic: 'epercib.jpeg',
     password: 'password',
     password_confirmation: 'password'
 )
