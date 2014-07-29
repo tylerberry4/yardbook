@@ -19,11 +19,8 @@ class API::V1::StudentsController < ApplicationController
   param_group :user, API::V1::UsersController
   def create
     @student = Student.new(student_params)
-    if @student.save
-      respond_with status: :created
-    else
-      respond_with @student.errors, status: :unprocessable_entity
-    end
+    @student.save
+    respond_with @student
   end
 
   api :PATCH, "/students/:id", "Update an student"
@@ -38,6 +35,7 @@ class API::V1::StudentsController < ApplicationController
   param_group :user, API::V1::UsersController
   def destroy
     @student.destroy
+    respond_with @student
   end
 
   private

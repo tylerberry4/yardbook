@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe AdminsController, :type => :controller do
+describe API::V1::AdminsController, :type => :controller do
   describe "GET index" do
     it "shows all admins" do
       admins = create_list(:admin, 2)

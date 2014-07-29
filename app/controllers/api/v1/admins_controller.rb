@@ -19,11 +19,8 @@ class API::V1::AdminsController < ApplicationController
   param_group :user, API::V1::UsersController
   def create
     @admin = Admin.new(admin_params)
-    if @admin.save
-      respond_with status: :created
-    else
-      respond_with @admin.errors, status: :unprocessable_entity
-    end
+    @admin.save
+    respond_with @admin
   end
 
   api :PATCH, "/admins/:id", "Update an admin"
@@ -38,6 +35,7 @@ class API::V1::AdminsController < ApplicationController
   param_group :user, API::V1::UsersController
   def destroy
     @admin.destroy
+    respond_with @admin
   end
 
   private
