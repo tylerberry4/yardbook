@@ -35,8 +35,6 @@ class StudentsController < ApplicationController
         format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
-      @student.update(student_params)
-      redirect_to @student
   end
 
   def destroy
