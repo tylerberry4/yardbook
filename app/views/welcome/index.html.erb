@@ -18,7 +18,7 @@
 
 
     <div id="mainContainer">
-      <% @admins.each do |user| %>
+      <% @students.each do |user| %>
         <% if user.profile_pic? %>
         <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
         <% else %>
@@ -35,7 +35,7 @@
     </div>
 
     <div id="mainContainer">
-      <% @students.each do |user| %>
+      <% @admins.each do |user| %>
         <% if user.profile_pic? %>
         <div class="hexContainer" style="background-image: url('<%= user.profile_pic.url %>'); background-repeat:no-repeat" >
         <% else %>

@@ -1,5 +1,5 @@
 class StudentSerializer < ActiveModel::Serializer
-  attributes :id, :fname, :lname, :blurb, :full_name, :profile_url,  :profile_pic
+  attributes :id, :fname, :lname, :blurb, :full_name, :profile_pic
 
   def full_name
     "#{object.fname} #{object.lname}"
